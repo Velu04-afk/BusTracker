@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffc99d"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/bus" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Enter Name"
+        android:textStyle="bold"
+        android:textColor="#2b3252"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_gravity="center"
+        android:textColor="#2b3252"
+        android:id="@+id/name"
+        android:textColorHint="#A9A9A9"
+        android:layout_marginTop="25dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter bus number"
+        android:textStyle="bold"
+        android:textColor="#2b3252"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Bus Number"
+        android:textColor="#2b3252"
+        android:id="@+id/busno"
+        android:inputType="number"
+        android:textColorHint="#A9A9A9"
+        android:layout_marginTop="25dp"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_dest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#000"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:id="@+id/checkbus"
+
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="check"
+        android:text="Check bus no" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="stopService"
+            android:textColor="#fff"
+            android:id="@+id/stop"
+            android:visibility="invisible"
+            android:background="@drawable/buttonshape"
+            android:layout_alignParentRight="true"
+            android:text="Stop" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="startService"
+            android:textColor="#fff"
+            android:id="@+id/start"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonshape"
+            android:text="Track Bus" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

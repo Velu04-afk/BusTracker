@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffc99d"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    tools:context=".search_activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="170dp"
+        app:srcCompat="@drawable/bus" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#2b3252"
+        android:textSize="20dp"
+        android:text="Enter the bus number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bus Number"
+        android:textColor="#2b3252"
+        android:id="@+id/busno"
+        android:inputType="number"
+        android:textColorHint="#2b3252"
+        android:layout_marginTop="25dp"
+        android:singleLine="true"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_dest"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:backgroundTint="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/checkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFF"
+        android:onClick="checkb"
+        android:layout_marginTop="20dp"
+        android:text="CHeck bus" />
+
+
+    <Button
+        android:id="@+id/locTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:text="Track Bus" />
+
+    </RelativeLayout>
+
+</LinearLayout>

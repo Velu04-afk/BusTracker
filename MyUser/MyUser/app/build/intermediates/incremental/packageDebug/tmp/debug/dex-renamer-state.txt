@@ -1,0 +1,4 @@
+#Tue Sep 06 16:04:06 IST 2022
+base.0=E\:\\Project Sem 5\\MyUser\\MyUser\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
