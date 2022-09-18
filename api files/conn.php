@@ -1,8 +1,8 @@
 <?php 
-$servername='localhost';
-$username='id12307345_akshay';
-$password='akshay@123';
-$db='id12307345_location';
+$servername='divyasingh.datadase.windows.net';
+$username='Divya';
+$password='Devesh-2002';
+$db='BusTracker';
 
 $conn=new mysqli($servername,$username,$password,$db);
 if ($conn->connect_error) {
