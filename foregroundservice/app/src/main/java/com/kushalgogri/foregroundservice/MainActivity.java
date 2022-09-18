@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     ArrayAdapter aa1;
     String pos;
-    String local="https://bustracker20.azurewebsites.net";
+    String local="https://bustracktest.azurewebsites.net";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
