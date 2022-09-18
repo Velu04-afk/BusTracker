@@ -42,7 +42,7 @@ public class search_activity extends AppCompatActivity implements AdapterView.On
     private String value;
     String[] destinationlist=new String[3];
     String n1,pos,n11;
-    String local="https://bustracker20.azurewebsites.net";
+    String local="https://bustracktest.azurewebsites.net";
     RequestQueue queue;
     ArrayAdapter aa1;
     Spinner dest;
