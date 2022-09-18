@@ -70,7 +70,7 @@ public class MainActivity extends FragmentActivity implements LocationListener,O
     int click=0;
     private RequestQueue mRequestQueue;
     private StringRequest mStringRequest;
-    private String s_url="https://bustracker20.azurewebsites.net/retrieveCoordinates.php";
+    private String s_url="https://bustracktest.azurewebsites.net/retrieveCoordinates.php";
     LocationManager locationManager;
     Location location;
     Double userlat,userlng;
