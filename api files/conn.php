@@ -1,14 +1,10 @@
-<?php 
-$servername="tcp:divyasingh.database.windows.net,1433";
-$username='Divya';
-$password='Devesh-2002';
-$db='BusTracker';
-
-$conn=new mysqli($servername,$username,$password,$db);
-if ($conn->connect_error) {
-	die("connection failed".$conn->connect_error);
-	# code...
-}else{
-//	echo "connected successfully";
+<?php
+// PHP Data Objects(PDO) Sample Code:
+try {
+    $conn = new PDO("sqlsrv:server = tcp:divyasingh.database.windows.net,1433; Database = BusTracker", "Divya", "{your_password_here}");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
-?>
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
