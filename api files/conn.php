@@ -1,5 +1,5 @@
 <?php 
-$servername='divyasingh.datadase.windows.net';
+$servername="tcp:divyasingh.database.windows.net,1433";
 $username='Divya';
 $password='Devesh-2002';
 $db='BusTracker';
