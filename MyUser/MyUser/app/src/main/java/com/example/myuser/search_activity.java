@@ -158,7 +158,7 @@ public class search_activity extends AppCompatActivity implements AdapterView.On
 
     public void CheckBus(final String n1, final View v) {
 
-        StringRequest strReq = new StringRequest(Request.Method.POST, "https://bustracker20.azurewebsites.net/checkBus.php", new com.android.volley.Response.Listener<String>() {
+        StringRequest strReq = new StringRequest(Request.Method.POST, "https://bustracktest.azurewebsites.net/checkBus.php", new com.android.volley.Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
